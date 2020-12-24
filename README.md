@@ -22,14 +22,14 @@ font-awesome
 
 ```html
 <link href="https://cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css">
-<link href="./disk/slidercaptcha.css">
+<link href="./disk/mustaqimcaptcha.css">
 ```
 Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
 ### JS
 
 ```html
-<script src="./disk/longbow.slidercaptcha.js"></script>
+<script src="./disk/mustaqimcaptcha.min.js"></script>
 ```
 
 Place the following `<script>`s near the end of your pages, right before the closing `</body>` tag, to enable them. 
