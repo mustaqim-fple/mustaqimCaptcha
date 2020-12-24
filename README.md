@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## Slider Captcha Bootstrap 4
 
 <span>English</span>
@@ -211,4 +211,4 @@ public class MustaqimCaptchaController {
 =======
 # mustaqimCaptcha
 Slider Captcha
->>>>>>> origin/main
+
