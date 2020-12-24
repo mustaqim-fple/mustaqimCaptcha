@@ -1,0 +1,57 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Slider Captcha Demo</title>
+    <title>Binaricx - Register</title>
+    <link type="text/css" rel="stylesheet" href="http://local.web.binaricx.com/asset_web/css/bootstrap.min.css?v=2020-12-24T00:19:15+08:00">
+    <link type="text/css" rel="stylesheet" href="http://local.web.binaricx.com/asset_web/css/style.css?v=2020-12-24T00:19:15+08:00">
+
+    <script type="text/javascript" src="http://local.web.binaricx.com/asset_web/js/library.min.js?v=2020-12-24T00:19:15+08:00"></script>
+    <script type="text/javascript" src="http://local.web.binaricx.com/asset_web/lang/lang_en.js?v=2020-12-24T00:19:15+08:00"></script>
+    <script type="text/javascript" src="http://local.web.binaricx.com/asset_web/js/script.js?v=2020-12-24T00:19:15+08:00"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="disk/mustaqimcaptcha.css" rel="stylesheet" />
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="form-row">
+            <div class="col-12">
+                <div class="slidercaptcha card">
+                    <div class="card-header">
+                        <span>Drag To Verify</span>
+                    </div>
+                    <div class="card-body">
+                        <div id="captcha"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="disk/mustaqimCaptcha.min.js"></script>
+    <script>
+    
+        $('#captcha').mustaqimCaptcha({
+            repeatIcon: 'fa fa-redo',
+            backIcon: 'fa fa-times',
+            // setSrc: function () {
+            //     return 'https://imgs.blazor.zone/images/Pic' + Math.round(Math.random() * 136) + '.jpg';
+            // },
+            onSuccess: function () {
+                window.location.href = '/';
+            }
+        });
+        </script>
+</body>
+
+</html>
