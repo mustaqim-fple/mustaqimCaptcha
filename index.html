@@ -1,53 +1,54 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Slider Captcha Demo</title>
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-    
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link href="disk/mustaqimcaptcha.css" rel="stylesheet" />
+    <head>
 
-    <style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Slider Captcha Demo</title>
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
 
-    </style>
-</head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
 
-<body>
-    <div class="container-fluid">
-        <div class="form-row">
-            <div class="col-12">
-                <div class="slidercaptcha card">
-                    <div class="card-header">
-                        <span>Drag To Verify</span>
-                    </div>
-                    <div class="card-body">
-                        <div id="captcha"></div>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link href="disk/mustaqimcaptcha.css" rel="stylesheet" />
+
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="form-row">
+                <div class="col-12">
+                    <div class="slidercaptcha card">
+                        <div class="card-header">
+                            <span>Drag To Verify</span>
+                        </div>
+                        <div class="card-body">
+                            <div id="captcha"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="disk/mustaqimCaptcha.min.js"></script>
-    <script>
-    
-        $('#captcha').mustaqimCaptcha({
-            repeatIcon: 'fa fa-redo',
-            backIcon: 'fa fa-times',
-            // setSrc: function () {
-            //     return 'https://imgs.blazor.zone/images/Pic' + Math.round(Math.random() * 136) + '.jpg';
-            // },
-            onSuccess: function () {
-                window.location.href = '/';
-            }
-        });
+        <script src="disk/mustaqimCaptcha.min.js"></script>
+        <script>
+
+            $('#captcha').mustaqimCaptcha({
+                repeatIcon: 'fa fa-redo',
+                backIcon: 'fa fa-times',
+                // setSrc: function () {
+                //     return 'https://imgs.blazor.zone/images/Pic' + Math.round(Math.random() * 136) + '.jpg';
+                // },
+                onSuccess: function () {
+                    window.location.href = '/';
+                }
+            });
         </script>
-</body>
+    </body>
 
 </html>
